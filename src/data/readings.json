@@ -1,0 +1,339 @@
+ {"readings":{
+    "-Nq8P-exampleKey1": {
+      "humidity": 45.2,
+      "temperature": 22.5,
+      "timestamp": 1678886400000
+    },
+    "-Nq8P-exampleKey2": {
+      "humidity": 46,
+      "temperature": 23.1,
+      "timestamp": 1678887000000
+    },
+    "-Nq8P-exampleKey3": {
+      "humidity": 47.5,
+      "temperature": 24,
+      "timestamp": 1678887600000
+    },
+    "-Nq8P-exampleKey4": {
+      "humidity": 47.1,
+      "temperature": 23.8,
+      "timestamp": 1678888200000
+    },
+    "-Obw2-FlrnOtCnhj8xHK": {
+      "moisture": 326,
+      "temperature": 81.417490791548,
+      "timestamp": 1760870269.538376
+    },
+    "-Obw21iZLoGDRMw5OV7e": {
+      "moisture": 325,
+      "temperature": 81.610465530452,
+      "timestamp": 1760870280.0440574
+    },
+    "-Obw24BMRdjJPTQkYTQQ": {
+      "moisture": 324,
+      "temperature": 80.69107520735601,
+      "timestamp": 1760870290.1441226
+    },
+    "-Obw26e9deRv7YgbqwcJ": {
+      "moisture": 325,
+      "temperature": 81.610465530452,
+      "timestamp": 1760870300.2419083
+    },
+    "-Obw296wWiePxFHQk61z": {
+      "moisture": 325,
+      "temperature": 81.7920694265,
+      "timestamp": 1760870310.342536
+    },
+    "-Obw2B_lzAw-DykSiNG2": {
+      "moisture": 325,
+      "temperature": 81.7920694265,
+      "timestamp": 1760870320.439778
+    },
+    "-Obw2E2byrXSQU0TuM30": {
+      "moisture": 325,
+      "temperature": 81.610465530452,
+      "timestamp": 1760870330.5397778
+    },
+    "-Obw2GWKXCvm9jpBbVrs": {
+      "moisture": 325,
+      "temperature": 81.054282999452,
+      "timestamp": 1760870340.6426072
+    },
+    "-Obw2IzI5x4PSshnbTrp": {
+      "moisture": 325,
+      "temperature": 81.610465530452,
+      "timestamp": 1760870350.7354662
+    },
+    "-Obw2LS9BLf0bVf5jIsn": {
+      "moisture": 325,
+      "temperature": 80.87267910340401,
+      "timestamp": 1760870360.8468704
+    },
+    "-Obw2NuwywEdQ7GdG3EK": {
+      "moisture": 325,
+      "temperature": 81.2358868955,
+      "timestamp": 1760870370.948437
+    },
+    "-Obw2QNgRmBMxbSKjfYX": {
+      "moisture": 325,
+      "temperature": 81.054282999452,
+      "timestamp": 1760870381.0473113
+    },
+    "-Obw2SqOrJ9ESFtGS3-1": {
+      "moisture": 325,
+      "temperature": 81.2358868955,
+      "timestamp": 1760870391.1432323
+    },
+    "-Obw2VJAZqxe1_jo8uDP": {
+      "moisture": 325,
+      "temperature": 81.7920694265,
+      "timestamp": 1760870401.2363975
+    },
+    "-Obw2XlzXLVQbiwU4a8c": {
+      "moisture": 325,
+      "temperature": 81.7920694265,
+      "timestamp": 1760870411.3331301
+    },
+    "-Obw2_EkvaLUf_BiUrT4": {
+      "moisture": 325,
+      "temperature": 81.610465530452,
+      "timestamp": 1760870421.4331179
+    },
+    "-Obw2bhcQ8iuWBe1i2TZ": {
+      "moisture": 325,
+      "temperature": 80.87267910340401,
+      "timestamp": 1760870431.5302632
+    },
+    "-Obw2eAMi28cPuHl6B_n": {
+      "moisture": 325,
+      "temperature": 81.417490791548,
+      "timestamp": 1760870441.634288
+    },
+    "-Obw2gd4bIvQkqNkadSW": {
+      "moisture": 325,
+      "temperature": 81.610465530452,
+      "timestamp": 1760870451.729877
+    },
+    "-Obw2j5t52OtFLRBYQEN": {
+      "moisture": 325,
+      "temperature": 81.054282999452,
+      "timestamp": 1760870461.8237739
+    },
+    "-Obw2lZc2B6QHXTHyDPQ": {
+      "moisture": 325,
+      "temperature": 80.87267910340401,
+      "timestamp": 1760870471.923407
+    },
+    "-Obw2o1cgr5NsOQqNQV7": {
+      "moisture": 325,
+      "temperature": 81.2358868955,
+      "timestamp": 1760870482.0207343
+    },
+    "-Obw2qVOaDxJLy9MUzBX": {
+      "moisture": 325,
+      "temperature": 80.69107520735601,
+      "timestamp": 1760870492.1312368
+    },
+    "-Obw2sy99kbW4ct3WmBv": {
+      "moisture": 325,
+      "temperature": 80.87267910340401,
+      "timestamp": 1760870502.2269104
+    },
+    "-Obw2vQy2mlIkYCZdlbU": {
+      "moisture": 325,
+      "temperature": 80.69107520735601,
+      "timestamp": 1760870512.325308
+    },
+    "-Obw2xtjoxULfthGKPFj": {
+      "moisture": 325,
+      "temperature": 80.316496572404,
+      "timestamp": 1760870522.4245386
+    },
+    "-Obw3-MTSWoG_Kg2QHf6": {
+      "moisture": 325,
+      "temperature": 81.054282999452,
+      "timestamp": 1760870532.5212042
+    },
+    "-Obw31pEO569lDhZuQh3": {
+      "moisture": 325,
+      "temperature": 80.69107520735601,
+      "timestamp": 1760870542.6169186
+    },
+    "-Obw34Hye2T3kXB3c_f9": {
+      "moisture": 325,
+      "temperature": 80.69107520735601,
+      "timestamp": 1760870552.7131011
+    },
+    "-Obw36kh4JBxFnC93EOX": {
+      "moisture": 325,
+      "temperature": 80.316496572404,
+      "timestamp": 1760870562.8084483
+    },
+    "-Obw39DTdZPNm4EKYWO7": {
+      "moisture": 325,
+      "temperature": 80.498100468452,
+      "timestamp": 1760870572.9033797
+    },
+    "-Obw3BgHCjaiSGYivsjj": {
+      "moisture": 325,
+      "temperature": 80.498100468452,
+      "timestamp": 1760870583.0004342
+    },
+    "-Obw3E943lV_qdApHrh6": {
+      "moisture": 325,
+      "temperature": 81.054282999452,
+      "timestamp": 1760870593.1018846
+    },
+    "-Obw3GbtD92jew81RM40": {
+      "moisture": 325,
+      "temperature": 81.417490791548,
+      "timestamp": 1760870603.199051
+    },
+    "-Obw3J4hmX09Py1VqCiG": {
+      "moisture": 325,
+      "temperature": 81.2358868955,
+      "timestamp": 1760870613.2997003
+    },
+    "-Obw3LYWGc8BTS-ReMGT": {
+      "moisture": 325,
+      "temperature": 80.69107520735601,
+      "timestamp": 1760870623.3997827
+    },
+    "-Obw3O0LF_aW3jN1H-An": {
+      "moisture": 325,
+      "temperature": 81.2358868955,
+      "timestamp": 1760870633.5010564
+    },
+    "-Obw3QUPpBWketbpTnv8": {
+      "moisture": 325,
+      "temperature": 80.69107520735601,
+      "timestamp": 1760870643.601242
+    },
+    "-Obw3SxAjmKmdEPwTKyo": {
+      "moisture": 324,
+      "temperature": 80.316496572404,
+      "timestamp": 1760870653.7162323
+    },
+    "-Obw3VSklDEerauz5V7t": {
+      "moisture": 325,
+      "temperature": 80.498100468452,
+      "timestamp": 1760870663.8154192
+    },
+    "-Obw3XvVJpSr3e870Eek": {
+      "moisture": 325,
+      "temperature": 80.69107520735601,
+      "timestamp": 1760870674.091668
+    },
+    "-Obw3_OXA9UudXSoXYKh": {
+      "moisture": 325,
+      "temperature": 80.498100468452,
+      "timestamp": 1760870684.1883085
+    },
+    "-Obw3braxt9t7K_nCeS9": {
+      "moisture": 326,
+      "temperature": 80.69107520735601,
+      "timestamp": 1760870694.3014166
+    },
+    "-Obw3eKPf4F2sKlItgJ8": {
+      "moisture": 326,
+      "temperature": 79.397133715112,
+      "timestamp": 1760870704.4171865
+    },
+    "-Obw3gn3J69OhGnE9Y3q": {
+      "moisture": 327,
+      "temperature": 79.941945403256,
+      "timestamp": 1760870714.516282
+    },
+    "-Obw3jFwktaT9wWwLSKz": {
+      "moisture": 327,
+      "temperature": 80.498100468452,
+      "timestamp": 1760870724.6080713
+    },
+    "-Obw3lip4uu6dhTTlYAx": {
+      "moisture": 327,
+      "temperature": 80.69107520735601,
+      "timestamp": 1760870734.7134886
+    },
+    "-Obw3oBa5hs9fO4csrnt": {
+      "moisture": 327,
+      "temperature": 79.941945403256,
+      "timestamp": 1760870744.818018
+    },
+    "-Obw3qeM4ctvRaiHdbJ9": {
+      "moisture": 327,
+      "temperature": 80.316496572404,
+      "timestamp": 1760870754.9136438
+    },
+    "-Obw3t76qtGh5CbLYRE8": {
+      "moisture": 327,
+      "temperature": 79.941945403256,
+      "timestamp": 1760870765.0094657
+    },
+    "-Obw3v_w5__-OsjRUOeC": {
+      "moisture": 327,
+      "temperature": 79.760341507208,
+      "timestamp": 1760870775.1058161
+    },
+    "-Obw3y2jdwMznX37TO-a": {
+      "moisture": 327,
+      "temperature": 79.57873761116001,
+      "timestamp": 1760870785.2069705
+    },
+    "-Obw4-WTFNQK8KTpJstP": {
+      "moisture": 327,
+      "temperature": 79.760341507208,
+      "timestamp": 1760870795.3062577
+    },
+    "-Obw41zTgoOm_xRFCt1y": {
+      "moisture": 327,
+      "temperature": 79.941945403256,
+      "timestamp": 1760870805.4011328
+    },
+    "-Obw44SEGcwJSvkxcseS": {
+      "moisture": 327,
+      "temperature": 79.941945403256,
+      "timestamp": 1760870815.513003
+    },
+    "-Obw46uyX8dHG45We8jf": {
+      "moisture": 328,
+      "temperature": 79.760341507208,
+      "timestamp": 1760870825.6096575
+    },
+    "-Obw49NhLuKiOh1-ybQE": {
+      "moisture": 326,
+      "temperature": 80.134892676356,
+      "timestamp": 1760870835.704952
+    },
+    "-Obw4BqT4g4G9nxbHTgR": {
+      "moisture": 328,
+      "temperature": 80.134892676356,
+      "timestamp": 1760870845.7987423
+    },
+    "-Obw4EJyiIUuqZUxd9rC": {
+      "moisture": 327,
+      "temperature": 79.760341507208,
+      "timestamp": 1760870855.8967762
+    },
+    "-Obw4GmiV2HkaB9CgsFy": {
+      "moisture": 327,
+      "temperature": 79.760341507208,
+      "timestamp": 1760870866.0408049
+    },
+    "-Obw4JFUwsk1SPkxKGqd": {
+      "moisture": 325,
+      "temperature": 80.316496572404,
+      "timestamp": 1760870876.136286
+    },
+    "-Obw4LiNoeffM5Ca8o9V": {
+      "moisture": 327,
+      "temperature": 79.760341507208,
+      "timestamp": 1760870886.232941
+    },
+    "-Obw4OBdIfV9zaC1Yuyg": {
+      "moisture": 327,
+      "temperature": 79.397133715112,
+      "timestamp": 1760870896.3393245
+    }
+  }
+
+ }

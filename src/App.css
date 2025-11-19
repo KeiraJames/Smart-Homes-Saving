@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+/* --- Core Reset and Setup --- */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: #ffffff;
+}
+
+/* --- App Container & DUAL BACKGROUND SETUP --- */
+.app-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #211e1c;
+}
+
+.app-container::before,
+.app-container::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1.5s ease-in-out;
+}
+
+/* --- Login Background Layer (Bottom) --- */
+.app-container::before {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('../../images/landing-page.jpeg');
+  z-index: 1;
+}
+
+/* --- Dashboard Background Layer (Top) --- */
+.app-container::after {
+  background-image: linear-gradient(to bottom, rgba(50, 42, 38, 0.4), rgba(28, 25, 23, 0.9)), url('../../images/dashboard.jpeg');
+  opacity: 0;
+  z-index: 2;
+}
+
+/* --- The Transition Trigger --- */
+.app-container[data-logged-in="true"]::after {
+  opacity: 1;
+}
+
+/* --- Universal Phone Container --- */
+.phone-container {
+  width: 100%;
+  height: 96%;
+  max-width: 430px;
+  max-height: 932px;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  border-radius: 45px;
+  border: 3px solid rgb(0, 0, 0);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+
+/* --- Page Wrapper (for Login/Onboarding Flow) --- */
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 60px 30px 40px 30px;
+}
+
+/* --- Content & Button Styles for Login/Landing --- */
+.hero-content { flex-grow: 1; display: flex; flex-direction: column; justify-content: center; }
+.hero-title { font-family: 'Lora', serif; font-size: 4em; font-weight: 400; line-height: 1.15; margin: 0; animation: fadeIn 1s ease-in-out; }
+.hero-subtitle { font-size: 1.125em; font-weight: 500; margin: 20px 0 0 4px; opacity: 0.9; animation: fadeIn 1s ease-in-out 0.2s; }
+.page-footer { width: 100%; }
+.cta-button {
+  width: 100%; background: rgba(0, 0, 0, 0.15); border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff; padding: 18px 24px; font-size: 1.1em; font-weight: 600; border-radius: 50px;
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); cursor: pointer;
+  transition: all 0.25s ease; animation: slideUp 0.8s ease-out;
+}
+.cta-button:hover { background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.8); transform: translateY(-3px); }
+
+/* --- Auth Page Styles --- */
+.auth-wrapper { animation: fadeIn 0.5s ease-in-out; }
+.back-button { position: absolute; top: 25px; left: 25px; background: none; border: none; color: rgba(255, 255, 255, 0.8); font-size: 1em; font-weight: 500; cursor: pointer; padding: 5px; z-index: 5; }
+.back-button:hover { color: #fff; }
+.auth-container { width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+.auth-title { font-family: 'Lora', serif; font-size: 2.5em; font-weight: 700; margin-bottom: 30px; }
+.auth-form { width: 100%; display: flex; flex-direction: column; gap: 15px; }
+.auth-input { background: rgba(0, 0, 0, 0.2); border: 1px solid rgba(255, 255, 255, 0.4); color: #ffffff; padding: 18px; font-size: 1em; font-weight: 500; border-radius: 15px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); transition: all 0.2s ease; }
+.auth-input::placeholder { color: rgba(255, 255, 255, 0.6); }
+.auth-input:focus { outline: none; border-color: rgba(255, 255, 255, 0.8); box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); }
+.auth-form .cta-button { margin-top: 10px; }
+.auth-switch-text { margin-top: 25px; color: rgba(255, 255, 255, 0.8); }
+.auth-switch-button { background: none; border: none; color: #fff; font-weight: 700; text-decoration: underline; cursor: pointer; padding: 0; font-size: 1em; }
+
+/* --- Onboarding Styles --- */
+.onboarding { justify-content: flex-start; padding-top: 120px; }
+.onboarding-form { width: 100%; display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
+.chat-bubble { background: rgba(0, 0, 0, 0.25); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 20px; padding: 18px 22px; max-width: 90%; position: relative; animation: fadeIn 0.5s ease-out; }
+.chat-bubble p { margin: 0; font-size: 1.1em; font-weight: 500; line-height: 1.5; }
+.chat-bubble::after { content: ''; position: absolute; bottom: -10px; left: 30px; border-width: 10px 10px 0 10px; border-style: solid; border-color: rgba(0, 0, 0, 0.25) transparent transparent transparent; }
+
+/* --- DASHBOARD STYLES --- */
+.dashboard-shell { display: flex; flex-direction: column; width: 100%; height: 100%; }
+.dashboard-header { display: flex; justify-content: flex-end; align-items: center; padding: 20px; position: absolute; top: 15px; left: 0; width: 100%; box-sizing: border-box; z-index: 10; }
+.logout-button { background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: #fff; cursor: pointer; padding: 8px 16px; font-size: 0.9em; font-weight: 600; border-radius: 20px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); transition: background-color 0.2s ease; }
+.logout-button:hover { background: rgba(255, 255, 255, 0.2); }
+.dashboard-content { flex-grow: 1; padding: 20px; padding-top: 100px; overflow-y: auto; scrollbar-width: none; }
+.dashboard-content::-webkit-scrollbar { display: none; }
+.welcome-message h1 { font-size: 2.2em; margin: 0; font-weight: 700; }
+.welcome-message p { font-size: 1.1em; margin: 5px 0 0 0; color: rgba(255,255,255,0.7); }
+.widget { background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 25px; padding: 20px; backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); }
+.weather-widget { display: flex; align-items: center; justify-content: space-around; width: 90%; max-width: 300px; margin: 25px auto 0 auto; }
+.weather-item { display: flex; flex-direction: column; align-items: center; gap: 5px; font-size: 1.5em; font-weight: 500; }
+.separator { width: 1px; height: 40px; background: rgba(255,255,255,0.2); }
+
+.rooms-section { margin-top: 60px; }
+.rooms-section h2 { font-size: 1.5em; margin-bottom: 15px; }
+.rooms-carousel { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 20px; scrollbar-width: none; }
+.rooms-carousel::-webkit-scrollbar { display: none; }
+
+/* UPDATED Room Card Styles */
+.room-card { 
+  flex: 0 0 160px; 
+  height: 220px; 
+  border-radius: 20px; 
+  position: relative; 
+  overflow: hidden; 
+  color: #ffffff;
+  cursor: pointer; 
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background-color: rgba(210, 180, 140, 0.75);
+  border: 1px solid rgba(210, 180, 140, 0.9);
+}
+.room-card:hover { 
+  flex-basis: 180px; 
+  height: 240px; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+  background-color: rgba(210, 180, 140, 0.9);
+}
+.room-card .card-content { 
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.card-content h3 { 
+  margin: 0; 
+  font-size: 1.2em;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.dashboard-footer { padding: 20px; display: flex; justify-content: center; align-items: center; }
+.footer-indicator { width: 130px; height: 5px; background: rgba(255,255,255,0.5); border-radius: 5px; }
+.weather-icon-emoji { font-size: 32px; line-height: 1; margin-bottom: 5px; }
+
+
+.chart-page { padding: 20px; justify-content: flex-start; }
+.chart-header { display: flex; align-items: center; width: 100%; margin-bottom: 20px; gap: 20px; }
+.chart-header h2 { font-family: 'Lora', serif; margin: 0; }
+.chart-container { width: 100%; height: 350px; }
+
+
+.chatbot-page { padding: 20px; justify-content: flex-start; }
+.chat-window { flex-grow: 1; overflow-y: auto; padding: 10px; display: flex; flex-direction: column; gap: 15px; }
+.chat-message { padding: 12px 18px; border-radius: 20px; max-width: 80%; line-height: 1.5; }
+.chat-message p { margin: 0; }
+.chat-message.model { background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); align-self: flex-start; border-bottom-left-radius: 5px; }
+.chat-message.user { background-color: #D2B48C; color: #211e1c; align-self: flex-end; border-bottom-right-radius: 5px; }
+.chat-input-form { display: flex; gap: 10px; padding-top: 15px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+.chat-input-form input { flex-grow: 1; }
+.chat-input-form button { flex-shrink: 0; width: auto; }
+
+/* --- Animations --- */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { transform: translateY(50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+/* --- ADD TO THE END OF YOUR APP.CSS --- */
+
+/* --- Dynamic Alert Widget Styles --- */
+.alert-widget {
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 1.05em;
+  font-weight: 500;
+  padding: 18px;
+  transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+
+/* Style for when usage is on track */
+.alert-widget.good {
+  background-color: rgba(56, 121, 8, 0.3); /* Translucent green */
+  border: 1px solid rgba(100, 200, 100, 0.5);
+}
+
+/* Style for when usage is too high */
+.alert-widget.bad {
+  background-color: rgba(255, 115, 0, 0.2); /* Translucent orange/red */
+  border: 1px solid rgba(255, 115, 0, 0.5);
+}
+
+/* Neutral style for loading/error messages */
+.alert-widget.neutral {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --- Add to your CSS file --- */
+.refresh-button {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 0.9em;
+  font-weight: 600;
+  border-radius: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.refresh-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
