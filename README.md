@@ -3,6 +3,13 @@
 Smart Home Savings is a React-based web application that helps homeowners reduce energy costs by analyzing real sensor data collected by a Raspberry Pi.
 The app processes temperature, humidity, and HVAC usage data stored in a backend database and provides personalized recommendations on whether the user should **increase or decrease HVAC usage** to stay within a chosen budget.
 
+---
+## 📹 **Demo Video**
+
+
+https://github.com/user-attachments/assets/55860ba4-51db-4b82-ac34-21febc8f86dd
+
+
 
 ---
 
@@ -23,11 +30,6 @@ The app processes temperature, humidity, and HVAC usage data stored in a backend
 * **Responsive UI**
   Built with React, mobile-friendly, and easy to navigate.
 
----
-
-## 📹 **Demo Video**
-
-https://github.com/user-attachments/assets/12e98c7a-f722-4640-b5df-abdc3803c941
 ---
 
 ## 🛠️ **Tech Stack**
